@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 # two decorators, same function
 @app.route('/')
-@app.route('/index.html')
 def index():
     return render_template('index.html', the_title='Oxean-SA Home')
 
