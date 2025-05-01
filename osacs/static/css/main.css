@@ -143,9 +143,6 @@ Primary use:
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url('../images/bg01.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .simpleslide100-item {
