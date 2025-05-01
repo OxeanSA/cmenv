@@ -11,6 +11,7 @@ def index():
     return render_template('index.html', the_title='Oxean-SA Home')
 
 if __name__ == '__main__':
+    
     server = HTTPServer(WSGIContainer(app))
-    server.listen(port=5000)
+    server.listen(port=80)
     IOLoop.instance().start()
