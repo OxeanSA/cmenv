@@ -13,8 +13,8 @@ def index():
 if __name__ == '__main__':
     # Add SSL options
     ssl_options = {
-        "certfile": "./osacs/static/certs/certificate.crt",
-        "keyfile": "./osacs/static/certs/private.key"
+        "certfile": "./osacs/static/certs/cert.crt",
+        "keyfile": "./osacs/static/certs/privateKey.key"
     }
     server = HTTPServer(WSGIContainer(app), ssl_options=ssl_options)
 
