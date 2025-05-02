@@ -12,11 +12,12 @@ def index():
 
 if __name__ == '__main__':
     # Add SSL options
-    ssl_options = {
-        "certfile": "./osacs/static/certs/cert.crt",
-        "keyfile": "./osacs/static/certs/privateKey.key"
-    }
-    server = HTTPServer(WSGIContainer(app), ssl_options=ssl_options)
+#    ssl_options = {
+#        "certfile": "./osacs/static/certs/cert.crt",
+#        "keyfile": "./osacs/static/certs/privateKey.key"
+#    }
+#    server = HTTPServer(WSGIContainer(app), ssl_options=ssl_options)
+    server = HTTPServer(WSGIContainer(app))
 
     server.listen(port=80)
     IOLoop.instance().start()
