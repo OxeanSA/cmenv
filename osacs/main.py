@@ -18,5 +18,5 @@ if __name__ == '__main__':
     }
     server = HTTPServer(WSGIContainer(app), ssl_options=ssl_options)
 
-    server.listen(port=5000)
+    server.listen(port=80)
     IOLoop.instance().start()
